@@ -1,0 +1,27 @@
+{
+  "title": "Patron Works",
+  "description": "A centralized, content-focused blog hub for publishing weekly articles, growing an email list, and collecting reader support. Technical clarity, authenticity, and scalability.",
+  "url": "https://patronworks.com",
+  "author": {
+    "name": "Patron Works",
+    "email": "hello@patronworks.com",
+    "twitter": "@patronworks"
+  },
+  "social": {
+    "github": "https://github.com/patronworks",
+    "youtube": "https://youtube.com/@patronworks",
+    "twitter": "https://twitter.com/patronworks",
+    "linkedin": "https://linkedin.com/in/patronworks"
+  },
+  "newsletter": {
+    "provider": "convertkit",
+    "signupUrl": "#"
+  },
+  "support": {
+    "buyMeACoffee": "https://buymeacoffee.com/patronworks",
+    "kofi": "https://ko-fi.com/patronworks"
+  },
+  "merch": {
+    "store": "https://redbubble.com/patronworks"
+  }
+} 

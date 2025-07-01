@@ -1,0 +1,28 @@
+{
+  "name": "patron-works-blog",
+  "version": "1.0.0",
+  "description": "A centralized, content-focused blog hub for publishing weekly articles, growing an email list, and collecting reader support.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": [
+    "blog",
+    "eleventy",
+    "static-site",
+    "markdown"
+  ],
+  "author": "Patron Works",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-attrs": "^4.1.6"
+  },
+  "dependencies": {
+    "luxon": "^3.4.4"
+  }
+} 

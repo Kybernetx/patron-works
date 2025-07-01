@@ -1,0 +1,102 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="blog-post">
+    <header class="post-header">
+        <div class="container">
+            <div class="post-meta">
+                <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+                {% if tags %}
+                <div class="post-tags">
+                    {% for tag in tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            
+            <h1 class="post-title">{{ title }}</h1>
+            
+            {% if description %}
+            <p class="post-description">{{ description }}</p>
+            {% endif %}
+            
+            {% if image %}
+            <div class="post-hero-image">
+                <img src="{{ image }}" alt="{{ title }}">
+            </div>
+            {% endif %}
+        </div>
+    </header>
+    
+    <div class="post-content">
+        <div class="container">
+            <div class="post-body">
+                {{ content | safe }}
+            </div>
+            
+            <div class="post-footer">
+                <div class="post-support">
+                    <h3>Enjoyed this post?</h3>
+                    <p>If you found this content valuable, consider supporting my work. Your support helps me continue creating in-depth technical content and sharing insights from my journey.</p>
+                    <div class="support-buttons">
+                        <a href="{{ site.support.buyMeACoffee }}" target="_blank" rel="noopener" class="support-btn">☕ Buy Me a Coffee</a>
+                        <a href="{{ site.support.kofi }}" target="_blank" rel="noopener" class="support-btn">❤️ Ko-fi</a>
+                    </div>
+                </div>
+                
+                <div class="post-share">
+                    <h4>Share this post</h4>
+                    <div class="share-buttons">
+                        <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="share-btn twitter">Twitter</a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="share-btn linkedin">LinkedIn</a>
+                        <a href="mailto:?subject={{ title | urlencode }}&body=Check out this post: {{ site.url }}{{ page.url }}" class="share-btn email">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<section class="newsletter-cta">
+    <div class="container">
+        <div class="newsletter-content">
+            <h3>Never miss a post</h3>
+            <p>Get weekly updates delivered straight to your inbox. Technical insights, project updates, and thoughtful reflections on building in public.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% if collections.posts.length > 1 %}
+<section class="related-posts">
+    <div class="container">
+        <h3>More Posts</h3>
+        <div class="posts-grid">
+            {% for post in collections.posts | slice(0, 3) %}
+            {% if post.url != page.url %}
+            <article class="post-card">
+                {% if post.data.image %}
+                <div class="post-image">
+                    <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+                </div>
+                {% endif %}
+                <div class="post-content">
+                    <div class="post-meta">
+                        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                    </div>
+                    <h4><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+                    <p>{{ post.data.description }}</p>
+                    <a href="{{ post.url }}" class="read-more">Read More →</a>
+                </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %} 

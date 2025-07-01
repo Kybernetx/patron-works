@@ -1,0 +1,25 @@
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/" class="site-title">{{ site.title }}</a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+                    <li><a href="/blog/" {% if '/blog/' in page.url %}class="active"{% endif %}>Blog</a></li>
+                    <li><a href="/about/" {% if page.url == '/about/' %}class="active"{% endif %}>About</a></li>
+                    <li><a href="/newsletter/" {% if page.url == '/newsletter/' %}class="active"{% endif %}>Newsletter</a></li>
+                    <li><a href="/support/" {% if page.url == '/support/' %}class="active"{% endif %}>Support</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </div>
+</header> 

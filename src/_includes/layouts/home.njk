@@ -1,0 +1,113 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">{{ site.title }}</h1>
+                <p class="hero-subtitle">Technical clarity, authenticity, and scalability</p>
+                <p class="hero-description">A centralized, content-focused blog hub for publishing weekly articles, growing an email list, and collecting reader support. Serving as a working log of invention, reflection, and learning in real-time.</p>
+                
+                <div class="hero-actions">
+                    <a href="/blog/" class="btn btn-primary">Read Latest Posts</a>
+                    <a href="/support/" class="btn btn-secondary">Support My Work</a>
+                </div>
+            </div>
+            
+            <div class="hero-newsletter">
+                <h3>Weekly Newsletter</h3>
+                <p>Get insights delivered to your inbox every week.</p>
+                <form class="newsletter-form hero-newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if collections.featuredPosts.length > 0 %}
+<section class="featured-posts">
+    <div class="container">
+        <h2>Featured Post</h2>
+        {% for post in collections.featuredPosts | slice(0, 1) %}
+        <article class="featured-post-card">
+            {% if post.data.image %}
+            <div class="post-image">
+                <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+            </div>
+            {% endif %}
+            <div class="post-content">
+                <div class="post-meta">
+                    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                    {% if post.data.tags %}
+                    <div class="post-tags">
+                        {% for tag in post.data.tags %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                <p>{{ post.data.description }}</p>
+                <a href="{{ post.url }}" class="read-more">Read More →</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<section class="recent-posts">
+    <div class="container">
+        <h2>Recent Posts</h2>
+        <div class="posts-grid">
+            {% for post in collections.posts | slice(0, 3) %}
+            <article class="post-card">
+                {% if post.data.image %}
+                <div class="post-image">
+                    <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+                </div>
+                {% endif %}
+                <div class="post-content">
+                    <div class="post-meta">
+                        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                        {% if post.data.tags %}
+                        <div class="post-tags">
+                            {% for tag in post.data.tags %}
+                            <span class="tag">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                    <p>{{ post.data.description }}</p>
+                    <a href="{{ post.url }}" class="read-more">Read More →</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        
+        <div class="view-all-posts">
+            <a href="/blog/" class="btn btn-outline">View All Posts</a>
+        </div>
+    </div>
+</section>
+
+<section class="about-snippet">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Patron Works</h2>
+                <p>Welcome to my corner of the internet where I document the journey of building, learning, and creating. This blog serves as a real-time log of technical discoveries, entrepreneurial adventures, and insights from the world of technology and innovation.</p>
+                <p>Whether you're a fellow technologist, aspiring founder, or simply someone who enjoys deep dives into complex topics, you'll find content that challenges, inspires, and informs.</p>
+                <a href="/about/" class="btn btn-outline">Learn More About Me</a>
+            </div>
+            <div class="about-image">
+                <img src="/assets/images/profile.jpg" alt="Profile photo" class="profile-image">
+            </div>
+        </div>
+    </div>
+</section> 
