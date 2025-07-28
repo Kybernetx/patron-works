@@ -28,31 +28,27 @@ body {
 /* ===== CSS CUSTOM PROPERTIES (DESIGN TOKENS) ===== */
 :root {
     /* Colors - Primary Palette */
-    --color-forest-green: #0B4A30;
-    --color-charcoal-gray: #383A38;
-    --color-desert-clay: #C88464;
-    --color-warm-sand: #D9C3B2;
-    --color-sand-dune-mist: #F6F3EB;
-    --color-off-white: #F0ECE2;
+    --color-event-horizon-black: #0B0B0B;  /* Deep matte black — immersive depth and foundation */
+    --color-deep-space-blue: #0A1A2F;      /* Cosmic intelligence — advanced tech, space exploration */
+    --color-ice-white: #DDE3E9;            /* Arctic clarity — clean UI, contrast, scientific purity */
+    --color-true-black: #000000;           /* Absolute black — structural shadows, hard contrast */
     
     /* Colors - Secondary Palette */
-    --color-earth-brown: #5C4B33;
-    --color-black: #000000;
-    --color-sage-green: #A1A78A;
-    --color-dusty-clay: #C5A18B;
-    --color-terracotta: #E79B64;
+    --color-corsair-red: #B02527;          /* Tactical red — alerts, highlights, mission markings */
+    --color-oxidized-gray: #4B4F56;        /* Functional dark gray — panels, UI depth, muted text */
+    --color-airframe-steel: #7C7F85;       /* Industrial steel — surface color, UI containers, trim */
     
     /* Semantic Colors */
-    --color-primary: var(--color-forest-green);
-    --color-secondary: var(--color-desert-clay);
-    --color-accent: var(--color-terracotta);
-    --color-text: var(--color-charcoal-gray);
-    --color-text-light: var(--color-earth-brown);
-    --color-text-muted: var(--color-sage-green);
-    --color-background: var(--color-sand-dune-mist);
-    --color-background-alt: var(--color-off-white);
+    --color-primary: var(--color-deep-space-blue);
+    --color-secondary: var(--color-corsair-red);
+    --color-accent: var(--color-corsair-red);
+    --color-text: var(--color-event-horizon-black);
+    --color-text-light: var(--color-oxidized-gray);
+    --color-text-muted: var(--color-airframe-steel);
+    --color-background: var(--color-ice-white);
+    --color-background-alt: #F8F9FA;
     --color-background-card: #ffffff;
-    --color-border: var(--color-warm-sand);
+    --color-border: var(--color-airframe-steel);
     --color-border-light: #E5E7EB;
     
     /* Typography */
@@ -297,7 +293,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-earth-brown);
+    background-color: var(--color-oxidized-gray);
     color: white;
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
@@ -309,7 +305,7 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    background-color: var(--color-terracotta);
+    background-color: var(--color-corsair-red);
     color: white;
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
@@ -364,7 +360,7 @@ a:hover {
 }
 
 .newsletter-form button:hover {
-    background-color: var(--color-earth-brown);
+    background-color: var(--color-oxidized-gray);
 }
 
 /* ===== SECTIONS ===== */
@@ -451,8 +447,8 @@ a:hover {
 }
 
 .tag {
-    background-color: var(--color-warm-sand);
-    color: var(--color-text);
+    background-color: var(--color-airframe-steel);
+    color: var(--color-ice-white);
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--border-radius);
     font-size: var(--font-size-xs);
@@ -601,12 +597,12 @@ a:hover {
     border-radius: 4px;
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
     font-size: 0.9em;
-    color: var(--color-earth-brown);
+    color: var(--color-oxidized-gray);
 }
 
 .post-body pre {
-    background-color: var(--color-charcoal-gray);
-    color: var(--color-sand-dune-mist);
+    background-color: var(--color-event-horizon-black);
+    color: var(--color-ice-white);
     padding: var(--space-lg);
     border-radius: var(--border-radius);
     overflow-x: auto;
@@ -661,7 +657,7 @@ a:hover {
 }
 
 .support-btn:hover {
-    background-color: var(--color-terracotta);
+    background-color: var(--color-corsair-red);
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -722,7 +718,7 @@ a:hover {
 }
 
 .newsletter-cta .newsletter-form button:hover {
-    background-color: var(--color-terracotta);
+    background-color: var(--color-corsair-red);
 }
 
 /* ===== PAGE LAYOUT ===== */
@@ -765,8 +761,8 @@ a:hover {
 
 /* ===== FOOTER ===== */
 .site-footer {
-    background-color: var(--color-charcoal-gray);
-    color: var(--color-sand-dune-mist);
+    background-color: var(--color-event-horizon-black);
+    color: var(--color-ice-white);
     padding: var(--space-4xl) 0 var(--space-2xl);
     margin-top: var(--space-4xl);
 }
@@ -779,7 +775,7 @@ a:hover {
 }
 
 .footer-section h3 {
-    color: var(--color-warm-sand);
+    color: var(--color-airframe-steel);
     margin-bottom: var(--space-lg);
     font-size: var(--font-size-lg);
 }
@@ -790,9 +786,9 @@ a:hover {
 }
 
 .footer-newsletter input {
-    background-color: var(--color-earth-brown);
-    border-color: var(--color-warm-sand);
-    color: var(--color-sand-dune-mist);
+    background-color: var(--color-oxidized-gray);
+    border-color: var(--color-airframe-steel);
+    color: var(--color-ice-white);
 }
 
 .footer-newsletter input::placeholder {
@@ -805,12 +801,12 @@ a:hover {
 }
 
 .social-links a {
-    color: var(--color-warm-sand);
+    color: var(--color-airframe-steel);
     transition: color var(--transition-fast);
 }
 
 .social-links a:hover {
-    color: var(--color-desert-clay);
+    color: var(--color-corsair-red);
 }
 
 .footer-bottom {
@@ -818,7 +814,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding-top: var(--space-2xl);
-    border-top: 1px solid var(--color-earth-brown);
+    border-top: 1px solid var(--color-oxidized-gray);
     font-size: var(--font-size-sm);
     color: rgba(246, 243, 235, 0.7);
 }
@@ -835,7 +831,7 @@ a:hover {
 }
 
 .footer-links a:hover {
-    color: var(--color-warm-sand);
+    color: var(--color-airframe-steel);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */

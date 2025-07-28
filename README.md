@@ -17,11 +17,16 @@ A centralized, content-focused blog hub for publishing weekly articles, growing 
 
 ## Color Palette
 
-- **Forest Green** (#0B4A30) - Primary brand color
-- **Charcoal Gray** (#383A38) - Text and structure
-- **Desert Clay** (#C88464) - Warm accent color
-- **Warm Sand** (#D9C3B2) - Light accent
-- **Sand Dune Mist** (#F6F3EB) - Background color
+### Primary Palette
+- **Event Horizon Black** (#0B0B0B) - Deep matte black for immersive depth and foundation
+- **Deep Space Blue** (#0A1A2F) - Cosmic intelligence for advanced tech themes
+- **Ice White** (#DDE3E9) - Arctic clarity for clean UI and contrast
+- **True Black** (#000000) - Absolute black for structural shadows
+
+### Secondary Palette
+- **Corsair Red** (#B02527) - Tactical red for alerts and highlights
+- **Oxidized Gray** (#4B4F56) - Functional dark gray for panels and muted text
+- **Airframe Steel** (#7C7F85) - Industrial steel for surface colors and containers
 
 ## Project Structure
 

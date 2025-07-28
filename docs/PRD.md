@@ -26,7 +26,7 @@ This MVP PRD defines the minimal features required to launch **Patron Works** â€
 ### 4.2 Homepage
 - **Hero Section**: Highlight the featured or latest blog post.
 - **Mission/Value Statement**: Brief, compelling explanation of Patron Works' purpose.
-- **About Me snapshot**: Short introduction with photo and link to full bio.
+- **About Me snapshot**: Short introduction with photo and link to ful bio.
 - **Email newsletter sign-up**: Forms at both top and bottom of page.
 - **External links**: GitHub, YouTube, and social platforms.
 - **Call to Action**: Prominent "Support My Work" button or link.

@@ -8,27 +8,19 @@ This document outlines the primary and secondary color palettes for the **Patron
 
 This palette forms the core visual identity of the blog, providing foundational colors for backgrounds, text, and primary accents.
 
-| **Role**          | **Color Name**      | **Hex Code** | **Description**                                        |
-|-------------------|---------------------|--------------|--------------------------------------------------------|
-| Core              | Forest Green        | `#0B4A30`    | Deep, grounded — evokes strength and desert flora.     |
-| Neutral Base      | Charcoal Gray       | `#383A38`    | Strong, versatile base for structure and text.         |
-| Accent            | Desert Clay         | `#C88464`    | Warm adobe tone — inviting and earthy.                 |
-| Light Neutral     | Warm Sand           | `#D9C3B2`    | Soft sandy tone for warmth and balance.                |
-| Soft White        | Sand Dune Mist      | `#F6F3EB`    | Refined off-white — clean, natural, and desert-inspired. |
-| Background (Very Light) | Off-White     | `#F0ECE2`    | A very light neutral, suitable for primary backgrounds.|
-
----
+| Style Name               | Hex Code   | Description                                             |
+|--------------------------|------------|---------------------------------------------------------|
+| core/event-horizon-black | `#0B0B0B`  | Deep matte black — immersive depth and foundation       |
+| core/deep-space-blue     | `#0A1A2F`  | Cosmic intelligence — advanced tech, space exploration  |
+| core/ice-white           | `#DDE3E9`  | Arctic clarity — clean UI, contrast, scientific purity  |
+| core/true-black          | `#000000`  | Absolute black — structural shadows, hard contrast      |
 
 ## 2. Updated Secondary Color Palette
 
 This palette provides additional accent and variation colors, to be used thoughtfully for highlights and specific elements, especially where a warmer or bolder touch is desired.
 
-| **Color Name**    | **Hex Code** | **Description**                                      |
-|-------------------|--------------|------------------------------------------------------|
-| Earth Brown       | `#5C4B33`    | Deep, warm brown — grounding and rustic.            |
-| Black             | `#000000`    | High-contrast option for bold emphasis.              |
-| Sage Green        | `#A1A78A`    | Muted green for subtle highlights or variation.      |
-| Dusty Clay        | `#C5A18B`    | Soft, reddish neutral for warmth.                   |
-| Terracotta        | `#E79B64`    | Vibrant red-orange accent now used sparingly.       |
-
-       
+| Style Name               | Hex Code   | Description                                             |
+|--------------------------|------------|---------------------------------------------------------|
+| secondary/corsair-red    | `#B02527`  | Tactical red — alerts, highlights, mission markings     |
+| secondary/oxidized-gray  | `#4B4F56`  | Functional dark gray — panels, UI depth, muted text     |
+| secondary/airframe-steel | `#7C7F85`  | Industrial steel — surface color, UI containers, trim   | 
