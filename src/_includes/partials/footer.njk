@@ -40,9 +40,20 @@
                 <h3>Support</h3>
                 <p>Support my work and get exclusive content.</p>
                 <div class="support-buttons">
-                    <a href="{{ site.support.buyMeACoffee }}" target="_blank" rel="noopener" class="support-btn">Buy Me a Coffee</a>
-                    <a href="{{ site.support.kofi }}" target="_blank" rel="noopener" class="support-btn">Ko-fi</a>
+                    {# Display the most popular support options #}
+                    {% if site.support.buyMeACoffee %}
+                    <a href="{{ site.support.buyMeACoffee.url }}" target="_blank" rel="noopener" class="support-btn">{{ site.support.buyMeACoffee.emoji }} {{ site.support.buyMeACoffee.label }}</a>
+                    {% endif %}
+                    {% if site.support.kofi %}
+                    <a href="{{ site.support.kofi.url }}" target="_blank" rel="noopener" class="support-btn">{{ site.support.kofi.emoji }} {{ site.support.kofi.label }}</a>
+                    {% endif %}
+                    {% if site.support.patreon %}
+                    <a href="{{ site.support.patreon.url }}" target="_blank" rel="noopener" class="support-btn">{{ site.support.patreon.emoji }} {{ site.support.patreon.label }}</a>
+                    {% endif %}
                 </div>
+                <p style="margin-top: 1rem; font-size: 0.875rem;">
+                    <a href="/support/" style="color: var(--color-airframe-steel); text-decoration: underline;">More ways to support →</a>
+                </p>
             </div>
         </div>
         

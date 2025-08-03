@@ -30,6 +30,22 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
+  // Support label filter for consistent button text
+  eleventyConfig.addFilter("supportLabel", (key) => {
+    const labels = {
+      'buyMeACoffee': 'Buy Me a Coffee',
+      'kofi': 'Ko-fi',
+      'cashapp': 'Cash App',
+      'stripe': 'Donate via Stripe',
+      'paypal': 'PayPal',
+      'patreon': 'Patreon',
+      'githubSponsors': 'GitHub Sponsors',
+      'openCollective': 'Open Collective',
+      'liberapay': 'Liberapay'
+    };
+    return labels[key] || key;
+  });
+
   // Get the current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
@@ -46,6 +62,19 @@ module.exports = function(eleventyConfig) {
     }).sort((a, b) => {
       return b.date - a.date;
     });
+  });
+
+  // Helper filter to get support options by type
+  eleventyConfig.addFilter("supportByType", (supportOptions, type) => {
+    if (!supportOptions) return {};
+    
+    const filtered = {};
+    Object.keys(supportOptions).forEach(key => {
+      if (supportOptions[key].type === type) {
+        filtered[key] = supportOptions[key];
+      }
+    });
+    return filtered;
   });
 
   // Base configuration

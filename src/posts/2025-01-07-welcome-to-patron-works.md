@@ -152,7 +152,7 @@ The content pipeline is already building. Here's what you can expect in the comi
 This blog works best as a conversation, not a monologue. Here's how to stay connected:
 
 - **Newsletter**: Weekly insights delivered to your inbox, including exclusive content and early access to posts
-- **Social Media**: Follow the discussion on [Twitter](https://twitter.com/patronworks), [LinkedIn](https://linkedin.com/in/patronworks), and [GitHub](https://github.com/patronworks)
+- **Social Media**: Follow the discussion on [Twitter](https://x.com/Lkepatron), [LinkedIn](https://linkedin.com/in/patronworks), and [GitHub](https://github.com/patronworks)
 - **Support**: If you find value in this content, consider [supporting the work](/support/) to help sustain in-depth content creation
 
 ## A Personal Note

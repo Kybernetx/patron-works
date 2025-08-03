@@ -5,12 +5,12 @@
   "author": {
     "name": "Patron Works",
     "email": "hello@patronworks.com",
-    "twitter": "@patronworks"
+    "twitter": "@lkepatron"
   },
   "social": {
     "github": "https://github.com/patronworks",
     "youtube": "https://youtube.com/@patronworks",
-    "twitter": "https://twitter.com/patronworks",
+    "twitter": "https://twitter.com/lkepatron",
     "linkedin": "https://linkedin.com/in/patronworks"
   },
   "newsletter": {
@@ -18,10 +18,78 @@
     "signupUrl": "#"
   },
   "support": {
-    "buyMeACoffee": "https://buymeacoffee.com/patronworks",
-    "kofi": "https://ko-fi.com/patronworks"
+    "buyMeACoffee": {
+      "url": "https://buymeacoffee.com/patronworks",
+      "label": "Buy Me a Coffee",
+      "emoji": "☕",
+      "type": "one-time",
+      "description": "Support with a one-time contribution"
+    },
+    "kofi": {
+      "url": "https://ko-fi.com/patronworks",
+      "label": "Ko-fi",
+      "emoji": "❤️",
+      "type": "one-time",
+      "description": "One-time or recurring contributions"
+    },
+    "cashapp": {
+      "url": "https://cash.app/$YourCashtag",
+      "label": "Cash App",
+      "emoji": "💸",
+      "type": "one-time",
+      "description": "Send support via Cash App"
+    },
+    "stripe": {
+      "url": "https://buy.stripe.com/your-link",
+      "label": "Donate via Stripe",
+      "emoji": "💳",
+      "type": "one-time",
+      "description": "Secure one-time donation"
+    },
+    "paypal": {
+      "url": "https://paypal.me/yourusername",
+      "label": "PayPal",
+      "emoji": "💰",
+      "type": "one-time",
+      "description": "Donate via PayPal"
+    },
+    "patreon": {
+      "url": "https://patreon.com/yourusername",
+      "label": "Patreon",
+      "emoji": "🎯",
+      "type": "recurring",
+      "description": "Monthly support with exclusive perks"
+    },
+    "githubSponsors": {
+      "url": "https://github.com/sponsors/yourusername",
+      "label": "GitHub Sponsors",
+      "emoji": "🐙",
+      "type": "recurring",
+      "description": "Sponsor via GitHub"
+    },
+    "openCollective": {
+      "url": "https://opencollective.com/yourproject",
+      "label": "Open Collective",
+      "emoji": "🌐",
+      "type": "recurring",
+      "description": "Transparent funding platform"
+    },
+    "liberapay": {
+      "url": "https://liberapay.com/yourusername",
+      "label": "Liberapay",
+      "emoji": "🎁",
+      "type": "recurring",
+      "description": "Privacy-focused recurring donations"
+    }
+  },
+  "crypto": {
+    "bitcoin": "bc1qyouraddress",
+    "ethereum": "0xyouraddress"
   },
   "merch": {
-    "store": "https://redbubble.com/patronworks"
+    "store": "https://redbubble.com/patronworks",
+    "label": "Shop Merchandise",
+    "emoji": "👕",
+    "description": "Support through branded merchandise"
   }
 } 

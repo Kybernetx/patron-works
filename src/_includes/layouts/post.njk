@@ -41,9 +41,23 @@ layout: layouts/base.njk
                     <h3>Enjoyed this post?</h3>
                     <p>If you found this content valuable, consider supporting my work. Your support helps me continue creating in-depth technical content and sharing insights from my journey.</p>
                     <div class="support-buttons">
-                        <a href="{{ site.support.buyMeACoffee }}" target="_blank" rel="noopener" class="support-btn">☕ Buy Me a Coffee</a>
-                        <a href="{{ site.support.kofi }}" target="_blank" rel="noopener" class="support-btn">❤️ Ko-fi</a>
+                        {# Display primary support options #}
+                        {% if site.support.buyMeACoffee %}
+                        <a href="{{ site.support.buyMeACoffee.url }}" target="_blank" rel="noopener" class="support-btn">{{ site.support.buyMeACoffee.emoji }} {{ site.support.buyMeACoffee.label }}</a>
+                        {% endif %}
+                        {% if site.support.kofi %}
+                        <a href="{{ site.support.kofi.url }}" target="_blank" rel="noopener" class="support-btn">{{ site.support.kofi.emoji }} {{ site.support.kofi.label }}</a>
+                        {% endif %}
+                        {% if site.support.stripe %}
+                        <a href="{{ site.support.stripe.url }}" target="_blank" rel="noopener" class="support-btn">{{ site.support.stripe.emoji }} {{ site.support.stripe.label }}</a>
+                        {% endif %}
+                        {% if site.support.patreon %}
+                        <a href="{{ site.support.patreon.url }}" target="_blank" rel="noopener" class="support-btn">{{ site.support.patreon.emoji }} {{ site.support.patreon.label }}</a>
+                        {% endif %}
                     </div>
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem;">
+                        <a href="/support/" style="color: var(--color-text-muted); text-decoration: underline;">See all support options →</a>
+                    </p>
                 </div>
                 
                 <div class="post-share">
